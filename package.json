@@ -1,0 +1,29 @@
+{
+  "name": "jsmovieapp",
+  "version": "1.0.0",
+  "description": "Coding exercise Metrodigi",
+  "scripts": {
+    "start": "grunt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NaujOyamat/JSMovieApp.git"
+  },
+  "keywords": [
+    "Metrodigi",
+    "JSMovieApp",
+    "Test"
+  ],
+  "author": "Juan F. Tamayo Puertas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NaujOyamat/JSMovieApp/issues"
+  },
+  "homepage": "https://github.com/NaujOyamat/JSMovieApp#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

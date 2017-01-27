@@ -1,0 +1,90 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Movie App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <link rel="stylesheet" href="icons/foundation-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Karla|Padauk:700" rel="stylesheet">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body ng-app>
+  <!-- Menu -->
+    <section id="logo-container">
+      <div class="row">
+        <div id="app-title" class="small-12 medium-4 column align-self-top">
+          JS MOVIE APP
+        </div>
+        <div class="small-12 medium-4 medium-offset-4 column align-self-bottom">
+          <div class="input-group">
+            <input type="text" placeholder="Search Movie" class="input-group-field">
+            <div class="input-group-button">
+              <input type="submit" class="button button-search" value="Go!"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="line-separator-row" class="row">
+        <div class="column">
+          <div class="line-separator-large"></div>
+        </div>
+      </div>
+    </section>
+  <!-- Menu -->
+  
+  <!-- Movies -->
+    <section id="movies-container" ng-controller="MovieController as mvCtrl">
+      <div class="row align-center">
+        <div class="column small-9 medium-3">
+          <div class="card">
+            <div class="rating-number">89</div>
+            <img class="card-img" src="assets/godfather2.png">
+            <div class="card-section">
+              THE GODFATHER II
+              <p>James Franco start in this new series as an adaptation of the King's time travel glorious story.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column small-9 medium-3">
+          <div class="card">
+            <img class="card-img" src="assets/savingprivateryan.png">
+            <div class="card-section">
+              SAVING PRIVATE RYAN
+              <p>James Franco start in this new series as an adaptation of the King's time travel glorious story.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column small-9 medium-3">
+          <div class="card">
+            <img class="card-img" src="assets/butterflyeffect.png">
+            <div class="card-section">
+              THE BUTTERFLY EFFECT
+              <p>James Franco start in this new series as an adaptation of the King's time travel glorious story.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column small-9 medium-3">
+          <div class="card">
+            <img class="card-img" src="assets/fightclub.png">
+            <div class="card-section">
+              FIGHT CLUB
+              <p>James Franco start in this new series as an adaptation of the King's time travel glorious story.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- Movies -->
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
