@@ -1,7 +1,7 @@
 <!-- Movies -->
-  <div id="menu-container" ng-controller="MovieController as mvCtrl">
+  <div id="menu-container">
 
-    <div class="expanded row align-center" ng-repeat="row in mvCtrl.listMovies">
+    <div class="expanded row align-center" ng-repeat="row in mvCtrl.listMovies | searchFor:searchString">
       <div class="column small-12 medium-3" ng-repeat="mv in row">
         <div class="card">
           <div class="rating-number">{{mv.rating}}</div>

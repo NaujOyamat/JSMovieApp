@@ -24,29 +24,9 @@
       localStorage.setItem('movies', JSON.stringify(movies));
     };
 
-    this.convertToMatrix = function (movies) {
-      var moviesMatrix = [];
-      if (movies) {
-        var cols = 0, rows = 0, i = 0, length = movies.length;
-        for (i = 0; i < length; i++) {
-          if (cols < 4) {
-            if (!moviesMatrix[rows])
-              moviesMatrix[rows] = [];
+    this.searchString = "";
 
-            moviesMatrix[rows].push(movies[i]);
-            cols++;
-          } else {
-            cols = 1;
-            rows++;
-            moviesMatrix[rows] = [ movies[i] ];
-          }
-        }
-      }
-
-      return moviesMatrix;
-    };
-
-    this.listMovies = this.convertToMatrix(this.getMovies());
+    this.listMovies = convertToMatrix(this.getMovies());
   });
 
   var localMovies = [
