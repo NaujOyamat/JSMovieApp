@@ -1,4 +1,6 @@
 body {
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #f8fbfc;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -40,15 +42,9 @@ p {
   padding-top: 0.9375rem;
 }
 
-.column, .columns {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-}
-
 .rating-number {
   width: 60px;
   height: 60px;
-  float: right;
   position: absolute;
   font-family: 'Padauk', sans-serif;
   font-weight: bold;
@@ -58,6 +54,8 @@ p {
   text-align: center;
   vertical-align: middle;
   padding-top: 13px;
+  right: 10px;
+  top: 10px;
 }
 
 .card-img {
@@ -65,7 +63,8 @@ p {
 }
 
 .card {
-  min-width: 260px;
+  position: relative;
+  width: 260px;
   border-radius: 0px;
   background-color: #f8fbfc;
   border-left: 0px;
