@@ -1,0 +1,17 @@
+<!-- Movies -->
+  <div id="menu-container" ng-controller="MovieController as mvCtrl">
+
+    <div class="expanded row align-center" ng-repeat="row in mvCtrl.listMovies">
+      <div class="column small-12 medium-3" ng-repeat="mv in row">
+        <div class="card">
+          <div class="rating-number">{{mv.rating}}</div>
+          <img class="card-img" src="assets/{{mv.imageUrl}}">
+          <div class="card-section">
+            {{mv.name | uppercase}}
+            <p>{{mv.synopsis}}</p>
+          </div>
+        </div>
+      </div>
+
+  </div>
+<!-- Movies -->
