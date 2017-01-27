@@ -6,14 +6,14 @@
     var localStorage = window.localStorage;
 
     this.getMovies = function () {
-      // var movies = localStorage.getItem('movies');
-      // if (!movies) {
-      //   movies = [];
-      // } else {
-      //   movies = JSON.parse(movies);
-      // }
+      var movies = localStorage.getItem('movies');
+      if (!movies) {
+        movies = [];
+      } else {
+        movies = JSON.parse(movies);
+      }
 
-      var movies = localMovies;
+      movies = localMovies.concat(movies);
 
       return movies;
     };
